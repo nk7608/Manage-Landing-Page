@@ -943,6 +943,43 @@ body{
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 200%;
+  transform: translateY(-200%);
+  color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+}
+
+.carousel-button:hover,
+   .carousel-button:focus {
+  color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid grey;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
 .hover\:bg-brightRedLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
@@ -1057,4 +1094,4 @@ body{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-}
+}   
